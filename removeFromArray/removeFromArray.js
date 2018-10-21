@@ -1,6 +1,11 @@
-const removeFromArray = function(...args) {
-	let array = args[0];
-	return array.filter(val => !args.includes(val));
+const removeFromArray = function(...arguments) {
+	
+	let argArray = Array.from(arguments);
+	let initialValues = argArray[0];
+
+	let finalArray = initialValues.filter(number => !argArray.includes(number));
+
+	return finalArray;
 
 }
 
